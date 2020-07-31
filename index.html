@@ -1,0 +1,136 @@
+<html>
+<head>
+	<title>Blackjack Game</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<style>
+		.first-div-5 {
+			text-align: center;
+			margin: 0 auto;
+			width: 75%;
+			border: 1px solid black;
+		}
+		.flex-container-5-row1,
+		.flex-container-5-row2,
+		.flex-container-5-row3 {
+			border: 1px solid black;
+			padding: 10px;
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			justify-content: space-around;
+		}
+		.flex-container-5-row1 div {
+			padding: 10px;
+			text-align: center;
+			height: 350px;
+			flex: 1;
+			border: 1px solid black;
+		}
+		.flex-container-5-row1 {
+			background-image: url("images/blackjack.jpg");
+			color: #FFFFFF;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-position: center;
+			background-size: cover;
+		}
+		.flex-container-5-row2 {
+			background-image: url("images/blackjack.jpg");
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-position: center;
+			background-size: cover;
+		}
+		.flex-container-5-row2 div {
+			padding: 5x;
+			border: 1px solid black;
+		}
+		.flex-container-5-row2 button {
+			padding: 10px;
+			margin: 5px;
+			border: 1px solid black;
+		}
+		.flex-container-5-row3 table,
+		th,
+		td {
+			padding: 5px;
+			border: 1px solid black;
+		}
+		.flex-container-5-row1 img {
+			margin: 10x;
+			width: 25%;
+		}
+		#copyright a {
+			font-size: 12px;
+			font-style: italic;
+			font-family: sans-serif;
+			color: black;
+			position: fixed;
+  			bottom: 0;
+ 			right: 15px;
+		}
+	</style>
+</head>
+<body>
+	<div class="first-div-5">
+		<h1>Blackjack Game.</h1>
+		<h2 id="blackjackResult">Let's Play</h2>
+		<div class="flex-container-5-row1" id="blackjack-row1">
+
+			<div id="yourScore-div">
+				<h2>You:<span id="yourScore-span">0</span></h2>
+			</div>
+
+			<div id="dealerScore-div">
+				<h2>Dealer:<span id="dealerScore-span">0</span></h2>
+			</div>
+
+		</div>
+		<div class="flex-container-5-row2" id="">
+			<div>
+				<button type="button" id="hitButton" class="btn btn-primary">
+					Hit
+				</button>
+				<button type="button" id="standButton" class="btn btn-warning">
+					Stand
+				</button>
+				<button type="button" id="dealButton" class="btn btn-danger">
+					Deal
+				</button>
+			</div>
+		</div>
+		<div class="flex-container-5-row3" id="">
+			<table>
+				<tbody>
+					<tr>
+						<th>Wins</th>
+						<th>Loses</th>
+						<th>Draws</th>
+					</tr>
+					<tr>
+						<td><span id="wins-span">0</span></td>
+						<td><span id="loses-span">0</span></td>
+						<td><span id="draws-span">0</span></td>
+					</tr>
+				</tbody>
+			</table>
+
+		</div>
+	</div>
+	<div id="copyright"> <a href="https://github.com/sudipbhakat07">&copy; Sudip Bhakat</a> </div>
+
+</body>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+		crossorigin="anonymous"></script>
+	<script type="text/javascript" src="blackjack.js"></script>
+</html>
